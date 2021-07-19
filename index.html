@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>TODO-app__js</title>
+    <meta charset="UTF-8" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
+  <body>
+    <!-- TODOを追加 -->
+    <div class="add-todo-wrap">
+      <input type="text" placeholder="TODOを入力" />
+      <button class="add-btn">追加</button>
+    </div>
+    <!-- /TODOを追加 -->
 
-<body>
-	<div id="app"></div>
+    <!-- 未完了のTODO -->
+    <div class="todo-list-wrap">
+      <!-- リストタイトル -->
+      <p class="todo-title">未完了のTODO</p>
+      <!-- /リストタイトル -->
+      <ul class="todo-items">
+        <!-- TODO -->
+        <li class="todo-item">
+          <div class="todo-item-wrap">
+            <p class="todo-text">TODOです</p>
+            <button class="finish-btn">完了</button>
+            <button class="delete-btn">削除</button>
+          </div>
+        </li>
+        <!-- /TODO -->
+      </ul>
+    </div>
+    <!-- /未完了のTODO -->
 
-	<script src="src/index.js">
-	</script>
-</body>
+    <!-- 完了したTODO -->
+    <div class="finish-todo-list-wrap">
+      <!-- リストタイトル -->
+      <p class="todo-title">完了したTODO</p>
+      <!-- /リストタイトル -->
+      <ul class="todo-itmes">
+        <!-- TODO -->
+        <li class="todo-item">
+          <div class="todo-item-wrap">
+            <p class="todo-text">TODOでした</p>
+            <button class="return-btn">戻す</button>
+          </div>
+        </li>
+        <!-- /TODO -->
+      </ul>
+    </div>
+    <!-- /完了したTODO -->
 
+    <script src="src/index.js"></script>
+  </body>
 </html>
