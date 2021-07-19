@@ -7,18 +7,27 @@
 
   <body>
     <!-- TODOを追加 -->
-    <div class="add-todo-wrap">
-      <input type="text" placeholder="TODOを入力" />
-      <button class="add-btn">追加</button>
+    <div class="input-area">
+      <input id="add-text" type="text" placeholder="TODOを入力" />
+      <button id="add-button" class="add-btn">追加</button>
     </div>
     <!-- /TODOを追加 -->
 
     <!-- 未完了のTODO -->
-    <div class="todo-list-wrap">
+    <div class="incomplete-area">
       <!-- リストタイトル -->
       <p class="todo-title">未完了のTODO</p>
       <!-- /リストタイトル -->
-      <ul class="todo-items">
+      <ul id="incomplete-list" class="todo-items">
+        <!-- TODO -->
+        <li class="todo-item">
+          <div class="todo-item-wrap">
+            <p class="todo-text">TODOです</p>
+            <button class="finish-btn">完了</button>
+            <button class="delete-btn">削除</button>
+          </div>
+        </li>
+        <!-- /TODO -->
         <!-- TODO -->
         <li class="todo-item">
           <div class="todo-item-wrap">
@@ -33,7 +42,7 @@
     <!-- /未完了のTODO -->
 
     <!-- 完了したTODO -->
-    <div class="finish-todo-list-wrap">
+    <div class="complete-area">
       <!-- リストタイトル -->
       <p class="todo-title">完了したTODO</p>
       <!-- /リストタイトル -->
